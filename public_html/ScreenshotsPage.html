@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title> GoBucs Basketball App </title>
+<style>
+#header {
+    background-color:rgb(0, 0, 0);
+    color:white;
+    text-align:center;
+    padding:5px;
+
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:50px;
+    float:left;
+    padding:5px;	
+	width:98.5%;
+	font-size:24px;
+	border:5px solid black;
+}
+#section {
+    width:100%;
+    float:left;
+    padding:10px;	 	 
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+</style>
+</head>
+<body link="black" vlink="rgb(128, 0, 0)" style="background-color:rgb(128, 0, 0); font-family:arial; color:white;">
+<div id="header">
+<h1 style="font-size:72px"> <a href="GoBucsApp.html"> <img id="logo" src="GoBucsLogo.gif" width="150" height="150"> </a> Screenshots </h1>
+</div>
+<div id="nav">
+<p style="font-size:24px;"> <a href="ScreenshotsPage.html"> Screenshots </a> <a href="DevelopersPage.html"> &nbsp&nbsp&nbsp&nbspMeet the Developers </a> </p>
+</div>
+<div id="section">
+<img id="screenshot" onclick="changeImage()" src="screenshot1.gif">
+<p style="font-size:24px;"> Click on the image above to cycle through screenshots of the app. </p>
+</div>
+
+<script>
+function changeImage() {
+	var image = document.getElementById('screenshot');
+	if (image.src.match("screenshot1.gif")) {
+		image.src = "screenshot2.gif";
+	} 
+	else if (image.src.match("screenshot2.gif")) {
+		image.src = "screenshot3.gif";
+	}
+	else {
+		image.src = "screenshot1.gif";
+	}
+}
+</script>
+
+</body>
+</html>
